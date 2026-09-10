@@ -1,0 +1,21 @@
+# 编译产物
+/build/
+
+# ESP-IDF 自动生成的本地配置（含 Wi-Fi 密码、本机路径，不进仓库；
+# clone 后由 sdkconfig.defaults 重新生成）
+/sdkconfig
+/sdkconfig.old
+
+# 工作区助手目录
+/.workbuddy/
+
+# LVGL 第三方组件：只保留编译必需的 src/ + env_support/ + 顶层构建文件，
+# 其余（示例/文档/脚本/重复副本）体积大且编译用不到
+/components/lvgl/demos/
+/components/lvgl/docs/
+/components/lvgl/examples/
+/components/lvgl/scripts/
+/components/lvgl/lvgl-8.4.0/
+
+# 其他
+*.log

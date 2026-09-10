@@ -1,0 +1,93 @@
+menu "Clock display"
+
+config APP_WIFI_NETWORK_COUNT
+    int "Wi-Fi network count"
+    range 1 3
+    default 2
+    help
+        Number of Wi-Fi networks tried in order at boot.
+
+config APP_WIFI_SSID_1
+    string "Wi-Fi network 1 SSID"
+    default ""
+
+config APP_WIFI_PASSWORD_1
+    string "Wi-Fi network 1 password"
+    default ""
+
+config APP_WIFI_SSID_2
+    string "Wi-Fi network 2 SSID"
+    default ""
+
+config APP_WIFI_PASSWORD_2
+    string "Wi-Fi network 2 password"
+    default ""
+
+config APP_WIFI_SSID_3
+    string "Wi-Fi network 3 SSID"
+    default ""
+
+config APP_WIFI_PASSWORD_3
+    string "Wi-Fi network 3 password"
+    default ""
+
+config APP_ILI9341_SPI_HOST
+    int "ILI9341 SPI host"
+    range 1 2
+    default 1
+
+config APP_ILI9341_SPI_HZ
+    int "ILI9341 SPI frequency (Hz)"
+    default 20000000
+
+config APP_ILI9341_SCLK_GPIO
+    int "ILI9341 SCLK GPIO"
+    default 2
+
+config APP_ILI9341_MOSI_GPIO
+    int "ILI9341 MOSI GPIO"
+    default 3
+
+config APP_ILI9341_CS_GPIO
+    int "ILI9341 CS GPIO"
+    default 7
+
+config APP_ILI9341_DC_GPIO
+    int "ILI9341 DC GPIO"
+    default 10
+
+config APP_ILI9341_RST_GPIO
+    int "ILI9341 reset GPIO"
+    default 13
+
+config APP_ILI9341_BACKLIGHT_GPIO
+    int "ILI9341 backlight GPIO"
+    default 5
+
+config APP_DS3231_SDA_GPIO
+    int "DS3231 SDA GPIO"
+    default 19
+
+config APP_DS3231_SCL_GPIO
+    int "DS3231 SCL GPIO"
+    default 18
+
+config APP_DS3231_I2C_HZ
+    int "DS3231 I2C frequency (Hz)"
+    default 400000
+
+config APP_MARRIAGE_YEAR
+    int "Marriage year"
+    default 2026
+
+config APP_MARRIAGE_MONTH
+    int "Marriage month"
+    range 1 12
+    default 9
+
+config APP_MARRIAGE_DAY
+    int "Marriage day"
+    range 1 31
+    default 19
+
+endmenu
